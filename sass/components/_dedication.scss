@@ -1,0 +1,42 @@
+.dedication-section-title{
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 55px;
+}
+.list-dedication {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    padding: 0;
+}
+.dedication-section-item {
+    flex-basis: calc((100% - 50px) / 3);
+}
+.dedication-box{
+    position: relative;
+}
+.box-dedication-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 369px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+} 
+.text-dedication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-background-light);
+    padding: 27px
+}

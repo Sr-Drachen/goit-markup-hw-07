@@ -1,0 +1,70 @@
+.section-clients{
+    background-color: var(--main-background-light);
+}
+.clients-title { 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--main-color-dark);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.clients-list {
+    display: flex; 
+    gap: 24px;
+}
+.site {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-align: left;
+    line-height: 1.8;
+}
+.clients-link{
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--main-border-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: fill, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    transition-delay: 0;
+    &:focus .clients-icon{
+        background-color: var(--main-background-light);
+        fill: var(--brand-color);
+    }
+}
+.clients-list-item{
+    width: 168px;
+    height: 88px;
+    transition-property: fill, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    transition-delay: 0;
+    flex-basis: calc((100% - 130px) / 6);
+    &:hover .clients-link{
+        color: var(--brand-color);
+        border-color: solid 1px var(--brand-color);
+    }
+    &:hover .clients-icon{
+        fill: var(--brand-color);
+    }
+}
+.clients-icon {
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
+    fill: #AFB1B8;
+    transition-property: fill, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    transition-delay: 0;
+    &:hover{
+        fill: var(--brand-color);
+    }
+}

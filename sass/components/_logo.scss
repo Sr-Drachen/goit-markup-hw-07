@@ -1,0 +1,17 @@
+.logo{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    color: var(--brand-color);
+    margin-right: 93px;
+    font-family: $secondaryFont, sans-serif;
+    text-decoration: none;
+    display: block;
+}
+.logo-header-position{
+    padding: 24px 0px 25px;
+}
+.logo-footer-position {
+    margin-bottom: 9px;
+    margin-right: 0px;
+}

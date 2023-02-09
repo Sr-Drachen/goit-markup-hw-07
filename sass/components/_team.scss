@@ -1,0 +1,95 @@
+.team-section{
+    background-color: var(--main-background-chill);
+    padding-bottom: 0;
+}
+.team-container{
+    padding-bottom: 94px;
+}
+.team-section-title{
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,1;
+}
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+.team-soc-link {
+    background-color: var(--main-background-light);
+    border-radius: 50%;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition-property: fill, transform;
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    transition-delay: 0;
+    &:focus{
+        background-color: var(--brand-color);
+    }
+    &:focus .team-soc-icon{
+        fill: var(--main-color-light);
+    }
+}
+
+.team-soc-item:hover .team-soc-link{
+    background-color: var(--brand-color);
+    &:hover .team-soc-icon{
+    fill: var(--main-color-light);
+}
+}
+.team-soc-icon{
+    height: 20px;
+    width: 20px;
+    fill: #AFB1B8;
+    transition-property: fill, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    transition-delay: 0;
+}
+.team-dedication {
+    flex-wrap: wrap;
+    gap: 37px;
+    padding: 0;
+}
+.team-section-item {
+    flex-basis: calc((100% - 111px) / 4);
+}
+.team-section-item{
+    text-align: center;
+    background-color: var(--main-background-light);
+    border: 1px solid var(--main-border-chill);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-section-title-text{
+    padding: 25px;
+}
+.team-section-list-title{
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+
+.team-section-list-text{
+    display: block;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--main-color-grey);
+}
